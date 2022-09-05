@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+  <title>Tentando fazer algo simples</title>
+</head>
+<body>
+  <section class="container">
+    <h1>Simple Calculator</h1>
+    <div class="box-calc">
+      <label>
+        <input type="number" id="first-value" placeholder=" ">
+        <span class="input-label">1º Valor</span>
+      </label>
+      
+      <label>
+        <input type="text" id="operator" placeholder=" ">
+        <span class="input-label">Operação</span>
+      </label>
+
+      <label>
+        <input type="number" id="second-value" placeholder=" ">
+        <span class="input-label">2º Valor</span>
+      </label>
+      <button id="calc" onclick= calculo() class="calc-button"> Calcular</button>
+    </div>
+    <div class="box-operador">
+      <h2>Operadores possíveis:</h2>
+      <ul>
+        <li id="sum">[+] Somar</li>
+        <li id="subtraction">[-] Subtrair</li>
+        <li id="multiplication">[x] Multiplicar</li>
+        <li id="division">[/] Dividir</li>
+      </ul>
+    </div>
+    
+    <div class="box-result">
+        <h2>O resultado é:</h2>
+        <div id="resultado"></div>
+    </div>
+    
+  </section>
+ 
+  
+  <script src="./script.js"></script>
+</body>
+</html>
